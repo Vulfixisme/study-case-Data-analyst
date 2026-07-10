@@ -16,7 +16,7 @@ from transform import run_pipeline
 
 st.set_page_config(
     page_title="Riliv Counseling — Dashboard Reporting",
-    page_icon="📊",
+    page_icon="",
     layout="wide",
 )
 
@@ -34,7 +34,7 @@ def get_data():
 
 df = get_data()
 
-st.title("📊 Dashboard Reporting — Pendaftaran Konseling")
+st.title(" Dashboard Reporting — Pendaftaran Konseling")
 st.caption(
     "Data telah melalui proses cleaning & transformasi wide → tidy "
     "(lihat notebook `Riliv_Data_Cleaning_Dashboard.ipynb` untuk detail prosesnya)."
@@ -197,7 +197,7 @@ with c8:
 # DATA TABLE
 # ---------------------------------------------------------------------------
 st.markdown("---")
-st.subheader("📋 Data Tidy (setelah filter)")
+st.subheader(" Data Tidy (setelah filter)")
 display_cols = [
     "Invitee Name", "Start Date & Time", "Perusahaan", "Divisi_Departemen", "Usia", "Gender",
     "Status_Kepegawaian", "Jenis_Layanan_Konseling", "Topik_Permasalahan",
